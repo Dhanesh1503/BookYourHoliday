@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Small chevron left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Browse-sprint-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Create-from-scratch-patterns-Copy" transform="translate(-928.000000, -202.000000)" fill="#00486F">
+            <path d="M938.520282,211.893931 L935.747671,209.12132 L935.040564,208.414214 L936.454778,207 L937.161885,207.707107 L939.934496,210.479718 L939.949748,210.464466 L941.363961,211.87868 L940.656854,212.585786 L937.12132,216.12132 L936.414214,216.828427 L935,215.414214 L935.707107,214.707107 L938.520282,211.893931 Z" id="icon_arrow-left" transform="translate(938.181981, 211.914214) rotate(-180.000000) translate(-938.181981, -211.914214) "></path>
+        </g>
+    </g>
+</svg>

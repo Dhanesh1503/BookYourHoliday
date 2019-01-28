@@ -1,0 +1,185 @@
+/***Header related variables***/
+
+$header-background-color: #ffffff;
+$header-box-shadow: 0 1px 0 0 #cccccc;
+$header-height: 55px;
+$header-text-color: #2d2c29;
+$header-width: 100%;
+
+/***Footer related variables***/
+
+$footer-background-color: #F5F5F5;
+$footer-height: 60px;
+$footer-text-color: #333333;
+
+/***Application header related variables***/
+
+$app-header-background-color: #f5f5f5;
+$app-header-border-color: #c4c3c3;
+$app-base-color: #00647D;
+/***Button related variables***/
+
+$button-background-color: $app-base-color;
+$button-border-color: #A9A9A9;
+$button-border-radius: 3px;
+$button-border-width: 1px;
+$button-color: #FFFFFF;
+$button-default-height: 42px;
+$button-default-width: 220px;
+$button-font-size: 16px;
+
+/***Link related variables***/
+
+$link-color :#00647D;
+$link-size :10px;
+
+/***Heading related variables***/
+
+$heading-color: #333333;
+$main-heading-size: 34px;
+$sub-heading-size: 25px;
+@mixin header {
+    background-color: $header-background-color;
+    box-shadow: $header-box-shadow;
+    color: $header-text-color;
+    height: $header-height;
+    width: $header-width;
+}
+
+@mixin label-mix {
+    color: #343434;
+    cursor: default;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+@mixin label-plain {
+    @include label-mix;
+    font-family: OpenSans, Helvetica, sans-serif;
+}
+
+@mixin label-bold {
+    @include label-mix;
+    font-family: OpenSansBold, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@mixin label-semi-bold {
+    @include label-mix;
+    font-family: OpenSansSemiBold, Helvetica, sans-serif;
+}
+
+@mixin application-basic-button {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    background-color: $button-background-color;
+    border-radius: $button-border-radius;
+    border: $button-border-width solid $button-border-color;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: $button-color;
+    font-family: OpenSansSemiBold, Helvetica, sans-serif;
+    font-size: $button-font-size;
+    height: $button-default-height;
+    width: $button-default-width;
+}
+
+@mixin application-filter-button {
+    background-color: #005a72;
+    border-radius: $button-border-radius;
+    border: none;
+    box-shadow: 0 2px 0 0 #004758;
+    -moz-box-shadow: 0 2px 0 0 #004758;
+    -webkit-box-shadow: 0 2px 0 0 #004758;
+    color: $button-color;
+    font-family: OpenSansSemiBold, Helvetica, sans-serif;
+    font-size: $button-font-size;
+    outline: none;
+}
+
+@mixin application-action-btn {
+    @include application-basic-button;
+    border: solid 1px transparent;
+    background-color: $button-color;
+    color: #005a72;
+    font-family: OpenSansBold;
+    font-size: 10px;
+    height: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 150px;
+}
+
+@mixin application-main-heading {
+    @include label-bold;
+    color: $heading-color;
+    font-size: $main-heading-size;
+}
+
+@mixin application-sub-heading {
+    @include label-semi-bold;
+    color: $heading-color;
+    font-size: $sub-heading-size;
+}
+
+@mixin application-link {
+    color: $link-color;
+    font-family: OpenSansBold, Helvetica, sans-serif;
+    font-size: $link-size;
+    font-weight: bold;
+}
+
+@mixin defaultPlaceholder {
+    height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #596265;
+}
+
+@mixin defaultPlaceholder {
+    height: 20px;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #aaa;
+}
+
+// will style input placeholder
+@mixin placeholder() {
+    &:-moz-placeholder {
+        @include defaultPlaceholder();
+        @content;
+    }
+    &::-moz-placeholder {
+        @include defaultPlaceholder();
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @include defaultPlaceholder();
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @include defaultPlaceholder();
+        @content;
+    }
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=url],
+input[type=search] {
+    height: 42px;
+    @include placeholder();
+}

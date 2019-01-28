@@ -1,0 +1,21 @@
+@import './scss/_intro';
+@import './scss/app';
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body,
+#appId {
+    box-sizing: border-box;
+    font-family: OpenSans, Helvetica, sans-serif;
+    #appId>div {
+        height: 100%;
+    }
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
