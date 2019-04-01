@@ -6,6 +6,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { hot } from 'react-hot-loader';
+import AppHeader from '../components/browse/header/AppHeader';
+import Home from '../components/browse/home/Home';
+import Footer from '../components/browse/footer/Footer';
 import '../styles/main.scss';
 
 class App extends Component {
@@ -14,8 +17,9 @@ class App extends Component {
 
     return (
       <div id='application_container'>
-        <a href='/home'><p>Hi you are now rendering the <strong>Application Component</strong>...!</p></a>
-        {children}
+        <AppHeader/>
+        <Home/>
+        <Footer/>
       </div>
     );
   }

@@ -16,9 +16,10 @@ export default (store, history) => {
     <Provider store={store}>
       <BrowserRouter>
       	<Switch>
-   			<Route exact path='/' component={App}/>
-   			<Route path='/home' component={HomeContainer}/>
-  	 	</Switch>
+        <App/>
+   			  {/*<Route exact path='/' component={App}/>*/}
+   			  {/*<Route path='/home' component={HomeContainer}/>*/}
+  	 	  </Switch>
       </BrowserRouter>
     </Provider>
   );

@@ -1,0 +1,28 @@
+#app-header {
+	width:100%;
+	position: fixed;
+    z-index: 1;
+}
+
+#app-header .navbar {
+	height: 100px;
+	width: 100%;
+	padding-left: 40px;
+    padding-right: 40px;
+}
+
+#home-nav > a {
+	color : #222;
+}
+
+#home-nav :nth-child(3) > a{
+	color : #222;
+}
+
+#subscribe-btn button {
+	border-radius: 35px;
+    padding: 4px 18px;
+    font-size: 14px;
+    background-color: #505050;
+    border-color: #505050;
+}

@@ -1,8 +1,7 @@
 @import './_intro';
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
 #application_container {
-	display: flex;
-	justify-content : center;
-	align-items: center;
-	padding: 10px;
+	width: inherit;
+	height: inherit;
 }
